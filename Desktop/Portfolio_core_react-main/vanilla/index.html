@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubh Tiwari - Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="bg-gradient-1"></div>
+        <div class="bg-gradient-2"></div>
+        
+        <div class="container">
+            <!-- Navbar -->
+            <nav class="navbar">
+                <div class="nav-email">
+                    <img src="../src/assets/email-icon.png" alt="Email">
+                    <span id="email-display">tiwarishubh832@gmail.com</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Hero Content -->
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hii.. It's Shubh Tiwari<br>
+                        Jr. Developer
+                    </h1>
+                    
+                    <div class="hero-intro">
+                        <p>👋 Hi, I Am <strong>Shubh Tiwari</strong></p>
+                        <p>I create and maintain modern websites and applications.</p>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="../src/assets/man.png" alt="Shubh Tiwari">
+                    <button class="query-btn" onclick="scrollToSection('contact')">
+                        <img src="../src/assets/external-link-icon.png" alt="Link">
+                        <span>Ask Query</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span>About Me</span>
+                <span class="title-highlight">
+                    <span>I am a</span>
+                    <img src="../src/assets/indian-flag.png" alt="India" class="flag-icon">
+                    <span>Developer</span>
+                </span>
+            </h2>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am Shubh Tiwari, a motivated and forward-thinking individual hailing from Uttar Pradesh. I am currently pursuing a B.Tech in Computer Science Engineering with a specialization in Artificial Intelligence and Machine Learning at Galgotias University. My aspiration is to excel as a leading developer in the field of AI and ML, and I am committed to continuously learning and growing in this domain.</p>
+
+                    <p>I actively participate in hackathons, where I have consistently demonstrated my skills, securing first place in several competitions. My technical expertise spans Python, PHP, Java, and UI/UX design. Additionally, I have gained significant hands-on experience by working on multiple live projects as a backend developer, collaborating with seasoned professionals from renowned companies such as Wipro and Infosys.</p>
+
+                    <p>I have also earned certifications in Artificial Intelligence Fundamentals and Advanced Python Programming, which further underscore my dedication to continuous learning and innovation. I am eager to contribute to transformative projects and am committed to delivering efficient, creative solutions in the rapidly evolving field of AI and ML.</p>
+
+                    <p>I have undertaken several impactful projects, including:<br>
+                    <strong>Plant Disease Detection:</strong> A web application developed using Streamlit, Python, and Jupyter to analyze and identify plant diseases, offering solutions and precautions.<br>
+                    <strong>Kisan.AI:</strong> A multi-functional platform enabling farmers and vendors to trade crops, lease land, manage inventories, and detect plant diseases, employing technologies such as Python, JavaScript, and MySQL.</p>
+                </div>
+
+                <div class="about-image">
+                    <img src="../src/assets/man1.png" alt="Shubh Tiwari">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            
+            <div class="skills-grid" id="skills-grid">
+                <!-- Skills will be dynamically inserted -->
+            </div>
+
+            <div class="services-section-wrapper">
+                <div class="services-list" id="services-list">
+                    <!-- Services will be dynamically inserted -->
+                </div>
+
+                <div class="services-title">
+                    <span>Solving</span>
+                    <span>Problems</span>
+                    <span>Through</span>
+                    <span>Good</span>
+                    <span>Services</span>
+                    <div class="services-image">
+                        <img src="../src/assets/man3.png" alt="Services">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="work" class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title">Work</h2>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="dashboard">Dashboard</button>
+                <button class="filter-btn" data-filter="mobile-app">Mobile App</button>
+                <button class="filter-btn" data-filter="website">Website</button>
+            </div>
+
+            <div class="portfolio-grid" id="portfolio-grid">
+                <!-- Projects will be dynamically inserted -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements-section">
+        <div class="container">
+            <div class="achievements-grid" id="achievements-grid">
+                <!-- Achievements will be dynamically inserted -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Lifestyle Section -->
+    <section id="lifestyle" class="lifestyle-section">
+        <div class="container">
+            <h2 class="section-title">My Lifestyle</h2>
+            
+            <div class="lifestyle-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="socialmedia">Social Media</button>
+                <button class="filter-btn" data-filter="collage">College Life</button>
+                <button class="filter-btn" data-filter="blogs">Blogs</button>
+            </div>
+
+            <div class="lifestyle-grid" id="lifestyle-grid">
+                <!-- Lifestyle items will be dynamically inserted -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Let's Talk</h2>
+            <p class="section-subtitle">You can connect with me. If you have any query just ask..</p>
+
+            <form id="contact-form" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="from_name">Your name<sup>*</sup></label>
+                        <input type="text" id="from_name" name="from_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="from_email">Your email<sup>*</sup></label>
+                        <input type="email" id="from_email" name="from_email" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="from_phone">Phone Number<sup>*</sup></label>
+                    <input type="tel" id="from_phone" name="from_phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Please tell a bit about yourself & your project<sup>*</sup></label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span class="btn-text">Send Contact Request Now</span>
+                    <span class="spinner" style="display: none;"></span>
+                </button>
+            </form>
+
+            <div id="toast" class="toast"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-contact">
+                    <div class="footer-item">
+                        <img src="../src/assets/email-icon.png" alt="Email">
+                        <span id="footer-email">tiwarishubh832@gmail.com</span>
+                    </div>
+                </div>
+
+                <nav class="footer-nav">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#work">Work</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Shubh Tiwari. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
